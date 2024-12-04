@@ -22,4 +22,13 @@ export default defineConfig({
       "@constant": path.resolve(__dirname, "src/constant"),
     },
   },
+  css: {
+    preprocessorOptions: {
+      // 全局样式引入
+      scss: {
+        // 文件路径，注意最后需要添加 ';'
+        additionalData: '@import "@/styles/variable.scss";'
+      },
+    },
+  },
 });
