@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
-    // "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    /** 启用增量编译，提高大型项目的编译速度 */
+    "composite": true,
     "target": "ES2020",
     "useDefineForClassFields": true,
     "lib": [
